@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Presence of Cardiovascular Issue</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Presence of Cardiovascular Issue</h1>
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict_classification')}}"method="POST">
+    
+      <input type="text" name="age" placeholder="What is your age" required="required" /><br>
+        <select name="gender" placeholder="Gender" required="required">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br>
+
+       
+        <select name="chest_pain" placeholder="Chest Pain" required="required">
+            <option value="" disabled selected>Select types of pain</option>
+            <option value="ASY">ASY</option>
+            <option value="NAP">NAP</option>
+            <option value="ATA">ATA</option>
+            <option value="TA">TA</option>
+        </select><br>
+
+
+        <input type="text" name="resting_BP" placeholder="Input Resting BP" required="required" /><br>
+        <input type="text" name="cholesterol" placeholder="Input Cholesterol" required="required" /><br>
+        <select name="fasting_BS" placeholder="fasting BS" required="required">
+            <option value="" disabled selected>Select fasting BS</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br>
+        <select name="resting_ECG" placeholder="Resting ECG" required="required">
+            <option value="" disabled selected>Select resting ECG</option>
+            <option value="Normal">Normal</option>
+            <option value="LVH">LVH</option>
+            <option value="ST">ST</option>
+        </select><br>
+        <input type="text" name="max_HR" placeholder="Input Max HeartRate" required="required" /><br>
+        <select name="exercise_angina" placeholder="Exercise Angina" required="required">
+            <option value="" disabled selected>Select Exercise Angina </option>
+            <option value="N">No</option>
+            <option value="Y">Yes</option>
+        </select><br>
+        <input type="text" name="old_peak" placeholder="Input old peak" required="required" /><br>
+        <select name="ST_slope" placeholder="ST slope" required="required">
+            <option value="" disabled selected>Select ST slope </option>
+            <option value="Flat">Flat</option>
+            <option value="Up">Up</option>
+            <option value="Down">Down</option>
+        </select><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <a class="btn btn-primary active" href="/">Home Page</a>
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HDB PRediction Price</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+    
+</head>
+<body>
+    <div class="login">
+    <h1>HDB Price Prediction</h1>
+    <form action="{{ url_for('predict_regression')}}"method="POST">
+
+        <select name="town" placeholder="Select Town" required="required">
+            <option value="" disabled selected>Select Town</option>
+            <option value="ANG MO KIO">ANG MO KIO</option>
+            <option value="BISHAN">BISHAN</option>
+            <option value="BUKIT BATOK">BUKIT BATOK</option>
+            <option value="BUKIT MERAH">BUKIT MERAH</option>
+            <option value="BUKIT PANJANG">BUKIT PANJANG</option>
+            <option value="CENTRAL AREA">CENTRAL AREA</option>
+            <option value="CHUA CHU KANG">CHUA CHU KANG</option>
+            <option value="CLEMENTI">CLEMENTI</option>
+            <option value="GEYLANG">GEYLANG</option>
+            <option value="HOUGNANG">HOUGANG</option>
+            <option value="JURONG EAST">JURONG EAST</option>
+            <option value="JURONG WEST">JURONG WEST</option>
+            <option value="KALLANG">KALLANG/WHAMPOA</option>
+            <option value="PASIR RIS">PASIR RIS</option>
+            <option value="PUNGGOL">PUNGGOL</option>
+            <option value="QUEENSTOWN">QUEENSTOWN</option>
+            <option value="SEMBAWANG">SEMBAWANG</option>
+            <option value="SENGKANG">SENGKANG</option>
+            <option value="SERANGOON">SERANGOON</option>
+            <option value="TAMPINES">TAMPINES</option>
+            <option value="WOODLANDS">WOODLANDS</option>
+            <option value="YISHUN">YISHUN</option>
+            <!-- Add more options based on your dataset and model -->
+        </select><br>
+
+        <select name="flat_type" placeholder="Select Flat Type" required="required">
+            <option value="" disabled selected>Select Flat Type</option>
+            <option value="1 ROOM">1 ROOM</option>
+            <option value="2 ROOM">2 ROOM</option>
+            <option value="3 ROOM">3 ROOM</option>
+            <option value="4 ROOM">4 ROOM</option>
+            <option value="5 ROOM">5 ROOM</option>
+            <option value="MULTI-GENERATION">MULTI-GENERATION</option>
+            <option value="EXECUTIVE">EXECUTIVE</option>
+            <!-- Add more options based on your dataset and model -->
+        </select><br>
+       
+        <select name="storey_range" placeholder=" Select Storey Range" required="required">
+            <option value="" disabled selected>Select Storey Range</option>
+            <option value="1">01 TO 03</option>
+            <option value="2">04 TO 06</option>
+            <option value="2">07 TO 09</option>
+            <option value="2">10 TO 12</option>
+            <option value="2">13 TO 15</option>
+            <option value="2">16 TO 18</option>
+            <option value="2">19 TO 21</option>
+            <option value="2">22 TO 24</option>
+            <option value="2">25 TO 27</option>
+            <option value="2">28 TO 30</option>
+            <option value="2">31 TO 33</option>
+            <option value="2">34 TO 36</option>
+            <option value="2">37 TO 39</option>
+            <option value="2">40 TO 42</option>
+            <option value="2">43 TO 45</option>
+            <option value="2">46 TO 48</option>
+            <option value="2">49 TO 51</option>
+
+        </select><br>
+        <input type="text" name="floor_area_sqm" placeholder="Indicate Floor Area in Square Metres E.g 60" required="required"><br>
+
+        <select name="flat_model" placeholder="Type of Flat Model" required="required">
+            <option value="" disabled selected>Select Flat Model</option>
+            <option value="Model A">Model A</option>
+            <option value="Improved">Improved</option>
+            <option value="New Generation">New Generation</option>
+            <option value="Premium Apartment">Premium Apartment</option>
+            <option value="Simplified">Simplified</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Maisonette">Maisonette</option>
+            <option value="Standard">Standard</option>
+            <option value="DBSS">DBSS</option>
+            <option value="Model A2">Model A2</option>
+            <option value="Type S1">Type S1</option>
+            <option value="Model A-Maisonette">Model A-Maisonette</option>
+            <option value="Adjoined flat">Adjoined flat</option>
+            <option value="Type S2">Type S2</option>
+            <option value="Terrace">Terrace</option>
+            <option value="Premium Apartment left">Premium Apartment loft</option>
+            <option value="Multi-Generation">Multi Generation</option>
+            <option value="2-room">2-room</option>
+            <option value="Improved-Maisonette">Improved-Maisonette</option>
+            <option value="Premium Maisonette ">Premium Maisonette</option>
+            <option value="3Gen">3Gen</option>
+
+                <!-- Add more options based on your dataset and model -->
+        </select><br>
+        <input type="text" name="lease_commence_date"  placeholder="Lease Commence Date E.g 1986" required="required"><br>
+        <!-- Add more input fields as needed -->
+        <button type="submit" value="Predict" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <a class="btn btn-primary active" href="/">Home Page</a>
+
+    <br>
+    <br>
+
+
+    </div>
+    {{pred}}
+ 
+</body>
+</html>
