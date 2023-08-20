@@ -1,6 +1,6 @@
 
 gunicorn 
-python_version==3.9
+python_version==3.9.17
 pycaret==3.0.0
 flask==2.2.2
 numpy==1.21.0
