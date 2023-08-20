@@ -1,6 +1,4 @@
-alembic==1.11.3
 ansi2html==1.8.0
-apache-beam==2.47.0
 asttokens==2.2.1
 attrs==23.1.0
 backcall==0.2.0
@@ -17,7 +15,6 @@ contourpy==1.0.6
 crcmod==1.7
 cycler==0.11.0
 Cython==3.0.0
-dash==2.12.1
 dash-core-components==2.0.0
 dash-html-components==2.0.0
 dash-table==5.0.0
@@ -41,7 +38,6 @@ Flask-SQLAlchemy==2.5.1
 Flask-WTF==1.0.1
 fonttools==4.38.0
 gitdb==4.0.10
-GitPython==3.1.32
 graphviz==0.20.1
 greenlet==1.1.3
 grpcio==1.54.2
@@ -57,7 +53,6 @@ itsdangerous==2.1.2
 jedi==0.19.0
 Jinja2==3.1.2
 joblib==1.3.2
-jsonschema==4.17.3
 jsonschema-specifications==0.1.3
 jupyter_core==5.0.0rc2
 jupyterlab-widgets==3.0.8
