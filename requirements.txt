@@ -3,7 +3,7 @@ gunicorn
 pycaret==2.9.10
 flask==2.2.2
 numpy==1.24.3
-pandas=1.2.4
+pandas==1.2.4
 scikit-learn==1.2.2
 joblib==1.2.0
 catboost==1.2
