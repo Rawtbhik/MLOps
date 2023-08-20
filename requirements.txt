@@ -4,6 +4,6 @@ pycaret==3.0.0
 flask==2.2.2
 numpy==1.21.6
 pandas==1.3.0
-scikit-learn==1.1.0
+scikit-learn==1.0.2
 joblib==1.2.0
 catboost==1.2
