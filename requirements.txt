@@ -123,7 +123,7 @@ tqdm==4.66.1
 trace-updater==0.0.9.1
 traitlets==5.9.0
 tsdownsample==0.1.2
-typing_extensions==4.6.2
+typing_extensions==4.7.1
 urllib3==1.26.16
 waitress==2.1.2
 wcwidth==0.2.6
