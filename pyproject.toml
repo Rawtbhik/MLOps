@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "mlops"
+version = "0.1.0"
+description = ""
+authors = ["zowie", "ShiMin"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+dvc = "^2.10.0"
+hydra-core = "^1.1.1"
+pdoc3 = "^0.10.0"
+kaleido = "0.2.1"
+ydata-profiling = "^4.5.1"
+gunicorn = "^21.2.0"
+pycaret = "^3.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pre-commit = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# black 
+line-length = 79
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+# flake8
+ignore = ["E501"]
+select = ["B","C","E","F","W","B9", "I", "N", "Q"]
+
+[tool.ruff.mccabe]
+max-complexity = 10
