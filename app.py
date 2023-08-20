@@ -8,12 +8,12 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the classification model
-classification_model = load_model('cv_issue-pipeline')
+classification_model = load_model('mlruns/2/8deec9957f874038b8798141e73620dc/artifacts/model/model')
 classification_cols = ['age', 'gender', 'chest_pain', 'resting_BP', 'cholesterol', 'fasting_BS', 'resting_ECG', 'max_HR',
                        'exercise_angina', 'old_peak', 'ST_slope']
 
 # Load the regression model
-regression_model = load_model('price_prediction_pipeline')
+regression_model = load_model('mlruns/1/5665d3f8f6e74146ae59908425cf241a/artifacts/model/model')
 regression_cols = ['town', 'flat_type', 'storey_range', 'floor_area_sqm', 'flat_model', 'lease_commence_date']
 
 @app.route('/')
