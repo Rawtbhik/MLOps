@@ -115,7 +115,7 @@ scikit-learn==1.0.2
 scikit-plot==0.3.7
 scipy==1.7.3
 six==1.16.0
-sktime==0.22.0
+sktime==0.19.2
 smmap==5.0.0
 SQLAlchemy==1.4.40
 sqlparse==0.4.4
