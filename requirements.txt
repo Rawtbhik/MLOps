@@ -1,6 +1,6 @@
 
 gunicorn
-pycaret==2.3.10
+pycaret==3.0.0
 flask==2.2.2
 numpy==1.21.6
 pandas==1.2.4
