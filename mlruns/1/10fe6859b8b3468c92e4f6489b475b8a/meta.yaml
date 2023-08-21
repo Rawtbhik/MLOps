@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sem%205%20school/IT3385%20MLops/IT3385%20merged%20assignment/mlruns/1/10fe6859b8b3468c92e4f6489b475b8a/artifacts
+end_time: 1692542528438
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 10fe6859b8b3468c92e4f6489b475b8a
+run_name: Linear Regression
+run_uuid: 10fe6859b8b3468c92e4f6489b475b8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692542525575
+status: 3
+tags: []
+user_id: ulyss
