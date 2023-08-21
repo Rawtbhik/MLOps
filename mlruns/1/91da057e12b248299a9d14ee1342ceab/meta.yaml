@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sem%205%20school/IT3385%20MLops/IT3385%20merged%20assignment/mlruns/1/91da057e12b248299a9d14ee1342ceab/artifacts
+end_time: 1692542508437
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 91da057e12b248299a9d14ee1342ceab
+run_name: Random Forest Regressor
+run_uuid: 91da057e12b248299a9d14ee1342ceab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692542505764
+status: 3
+tags: []
+user_id: ulyss
