@@ -13,7 +13,7 @@ classification_cols = ['age', 'gender', 'chest_pain', 'resting_BP', 'cholesterol
                        'exercise_angina', 'old_peak', 'ST_slope']
 
 # Load the regression model
-regression_model = load_model('mlruns/1/91da057e12b248299a9d14ee1342ceab/artifacts/model/model')
+regression_model = load_model('mlruns/1/51ce0336812b42fbaae7f6378fc08a7c/artifacts/model/model')
 regression_cols = ['town', 'flat_type', 'storey_range', 'floor_area_sqm', 'flat_model', 'lease_commence_date']
 
 @app.route('/')
