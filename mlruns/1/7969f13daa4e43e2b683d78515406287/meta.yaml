@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sem%205%20school/IT3385%20MLops/IT3385%20merged%20assignment/mlruns/1/7969f13daa4e43e2b683d78515406287/artifacts
+end_time: 1692542541332
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7969f13daa4e43e2b683d78515406287
+run_name: Lasso Regression
+run_uuid: 7969f13daa4e43e2b683d78515406287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692542538433
+status: 3
+tags: []
+user_id: ulyss

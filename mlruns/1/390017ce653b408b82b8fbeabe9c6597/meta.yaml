@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Sem%205%20school/IT3385%20MLops/IT3385%20merged%20assignment/mlruns/1/390017ce653b408b82b8fbeabe9c6597/artifacts
+end_time: 1692542522422
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 390017ce653b408b82b8fbeabe9c6597
+run_name: Gradient Boosting Regressor
+run_uuid: 390017ce653b408b82b8fbeabe9c6597
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692542519823
+status: 3
+tags: []
+user_id: ulyss
